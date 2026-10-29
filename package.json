@@ -1,0 +1,17 @@
+{
+  "name": "task-1",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "src/index.mjs",
+   "scripts": {
+    "start": "node 1blixen/server.mjs",
+    "start:worker": "node 1blixen/server.mjs --worker",
+    "probe:before": "node 1blixen/probe.mjs evidence/before.txt",
+    "probe:after": "node 1blixen/probe.mjs evidence/after.txt",
+    "pool": "node 1blixen/pool.mjs"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
